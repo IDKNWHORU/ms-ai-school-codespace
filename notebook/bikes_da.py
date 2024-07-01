@@ -30,7 +30,7 @@ def bike_da():
         bikes['주말구분']=bikes['대여일시'].dt.dayofweek.apply(lambda x: '평일' if x < 5 else '주말')
 
         # 위도, 경도 파일 merge
-        bike_shop = pd.read_csv(f'../data/공공자전거 대여소 정보_23._06.csv', encoding='cp949')
+        bike_shop = pd.read_csv(f'https://media.githubusercontent.com/media/IDKNWHORU/ms-ai-school-codespace/0626/data/%EA%B3%B5%EA%B3%B5%EC%9E%90%EC%A0%84%EA%B1%B0%20%EB%8C%80%EC%97%AC%EC%86%8C%20%EC%A0%95%EB%B3%B4_23._06.csv', encoding='cp949')
         bike_gu = bike_shop[['자치구', '대여소\r\n번호', '보관소(대여소)명', '위도', '경도']]
         bike_gu = bike_gu.rename(columns={'대여소\r\n번호': '대여소번호', '보관소(대여소)명': '대여소명'})
         bikes = pd.merge(bikes, bike_gu, left_on='대여 대여소번호', right_on='대여소번호')

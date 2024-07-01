@@ -1,6 +1,3 @@
-﻿name,radiant,bestmonth,startmonth,startday,endmonth,endday,hemisphere,preferredhemisphere
-Lyrids,Lyra,april,april,21,april,22,northern,northern
-Eta Aquarids,Aquarius,may,april,19,may,28,"northern, southern",southern
-Orionids,Orion,october,october,2,november,7,"northern, southern","northern, southern"
-Perseids,Perseus,august,july,14,august,24,northern,northern
-Leonids,Leo,november,november,6,november,30,"northern, southern","northern, southern"
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd03a213a89b0a39d095c6a78a86d4a456fc591b7c6b3ebc90bef20cef77fb90
+size 455

@@ -1,5 +1,6 @@
 import streamlit as st
 import finance_naver
+import bikes_da
 
 # 사이드 바 확인
 
@@ -18,6 +19,7 @@ if user_password == '1234':
         finance_naver.exchange_main()
     elif menu == "따릉이":
         st.subheader("따릉이 데이터 분석>>>>>>>>>>> ")
+        bikes_da.bike_da()
     elif menu == "유성우":
         st.subheader("유성우 데이터 분석>>>>>>>>>>> ")
     else:

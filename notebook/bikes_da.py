@@ -1,12 +1,9 @@
 def bike_da():
     import streamlit as st
-    import os
     import streamlit.components.v1 as components
     import folium
     import seaborn as sns
     import matplotlib.pyplot as plt
-
-    os.chdir("C:/Users/USER/.cursor-tutor/ms-ai-school/notebook")
 
     @st.cache_data
     def data_prerocessing() :

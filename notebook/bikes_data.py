@@ -8,7 +8,7 @@ def data_prerocessing() :
     bikes = pd.DataFrame()
 
     for i in range(1,4):
-        temp = pd.read_csv(f"../data/서울특별시 공공자전거 대여정보_201906_{i}.csv", encoding="cp949")
+        temp = pd.read_csv(f"https://media.githubusercontent.com/media/IDKNWHORU/ms-ai-school-codespace/0626/data/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B3%B5%EA%B3%B5%EC%9E%90%EC%A0%84%EA%B1%B0%20%EB%8C%80%EC%97%AC%EC%A0%95%EB%B3%B4_201906_{i}.csv", encoding="cp949")
         bikes = pd.concat([bikes, temp])
         
     bikes.isnull().sum()
